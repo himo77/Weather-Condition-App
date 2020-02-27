@@ -30,12 +30,12 @@
         {
             this.picWeather = new System.Windows.Forms.PictureBox();
             this.txtCity = new System.Windows.Forms.TextBox();
-            this.txtState = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblWeather = new System.Windows.Forms.Label();
             this.btnGetWeather = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.cbxState = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.picWeather)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,13 +54,6 @@
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(336, 31);
             this.txtCity.TabIndex = 1;
-            // 
-            // txtState
-            // 
-            this.txtState.Location = new System.Drawing.Point(711, 82);
-            this.txtState.Name = "txtState";
-            this.txtState.Size = new System.Drawing.Size(335, 31);
-            this.txtState.TabIndex = 2;
             // 
             // label3
             // 
@@ -108,22 +101,32 @@
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
+            // cbxState
+            // 
+            this.cbxState.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxState.FormattingEnabled = true;
+            this.cbxState.Location = new System.Drawing.Point(740, 85);
+            this.cbxState.Name = "cbxState";
+            this.cbxState.Size = new System.Drawing.Size(335, 33);
+            this.cbxState.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AcceptButton = this.btnGetWeather;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1468, 1086);
+            this.Controls.Add(this.cbxState);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnGetWeather);
             this.Controls.Add(this.lblWeather);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtState);
             this.Controls.Add(this.txtCity);
             this.Controls.Add(this.picWeather);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picWeather)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -134,12 +137,12 @@
 
         private System.Windows.Forms.PictureBox picWeather;
         private System.Windows.Forms.TextBox txtCity;
-        private System.Windows.Forms.TextBox txtState;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblWeather;
         private System.Windows.Forms.Button btnGetWeather;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.ComboBox cbxState;
     }
 }
 
