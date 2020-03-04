@@ -154,5 +154,10 @@ namespace Weather_Condition_App
         {
             cbxState.Items.AddRange(States);
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
